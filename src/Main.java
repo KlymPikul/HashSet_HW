@@ -19,11 +19,11 @@ public class Main {
         //FrequencyCounter
         String inputString = "programmer";
         HashMap<Character, Integer> frequencyMap = FrequencyCounter.countFrequency(inputString);
-        System.out.println("Frequency of each character in '" + inputString + "': " + frequencyMap);
+        System.out.println(inputString + "': " + frequencyMap);
 
         // CachingSqrt
         double number1 = 16.0;
-        double number2 = 25.0;
+        double number2 = 30.0;
 
         CachingSqrt.cacheSqrt(number1);
         CachingSqrt.cacheSqrt(number2);

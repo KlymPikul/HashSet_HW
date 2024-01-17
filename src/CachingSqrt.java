@@ -15,10 +15,10 @@ public class CachingSqrt {
 
     public static void cacheSqrt(double num) {
         if (!cache.containsKey(num)) {
-            double result = sqrt(num); // Вызываем sqrt, чтобы добавить значение в кеш
-            System.out.println("Caching sqrt(" + num + "): " + result);
+            double result = sqrt(num);
+            System.out.printf("%.2f : %.2f%n", num, result);
         } else {
-            System.out.println("Value already cached for sqrt(" + num + "): " + cache.get(num));
+            System.out.printf("%.2f : %.2f%n", num, cache.get(num));
         }
     }
 }
